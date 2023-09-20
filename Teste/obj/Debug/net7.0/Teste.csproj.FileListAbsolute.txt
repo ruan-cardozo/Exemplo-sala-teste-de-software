@@ -195,3 +195,4 @@ C:/Users/paulo.manseira/Desktop/Projetos/Almoxarifado/Teste/obj/Debug/net7.0/ref
 /home/ruan/Downloads/Almoxarifado/Teste/obj/Debug/net7.0/Teste.pdb
 /home/ruan/Downloads/Almoxarifado/Teste/obj/Debug/net7.0/Teste.genruntimeconfig.cache
 /home/ruan/Downloads/Almoxarifado/Teste/obj/Debug/net7.0/ref/Teste.dll
+/home/ruan/Downloads/Almoxarifado/Teste/bin/Debug/net7.0/ExpectedObjects.dll

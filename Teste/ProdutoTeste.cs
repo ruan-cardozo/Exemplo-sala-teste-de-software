@@ -1,3 +1,5 @@
+using ExpectedObjects;
+
 namespace Teste
 {
     public class ProdutoTeste
@@ -6,7 +8,7 @@ namespace Teste
         Eu, como almoxarife, preciso cadastrar produtos para que sejam
         consumidos pelos funcin�rios da empresa
 
-        Crit�rios de aceite?
+        Critérios de aceite?
         1 - Um novo produto deve ter obrigatoriamente um c�digo �nico, nome,
             saldo 0, custo 0 e unidade de medida
         2 - As unidades de medida s�o PC, KG, MT, GR, LT, CX
@@ -61,27 +63,36 @@ namespace Teste
             Assert.Equal(1, produto.Codigo);
             Assert.Equal(obj.nome, produto.Nome);
             Assert.Equal(obj.saldo, produto.Saldo);
-            Assert.Equal(obj.custo, produto.Custo);
+            Assert.Equal(obj.custo, produto.Custo);</PackageReference>
+    <PackageReference Include="ExpectedObjects" Version="3.5
             Assert.Equal(obj.medida, produto.Medida);
             */
 
             // Terceira forma usando setup de teste
-            
+            /*
             Produto produto = new Produto(this._codigo, this._nome, this._saldo, this._custo, this._medida);
             Assert.Equal(this._codigo, produto.Codigo);
             Assert.Equal(this._nome, produto.Nome);
             Assert.Equal(this._saldo, produto.Saldo);
             Assert.Equal(this._custo, produto.Custo);
             Assert.Equal(this._medida, produto.Medida);
+            */
+
+            // Quarta forma usando objeto anonimo e ExpectedObject
+                
+            var obj = new 
+            {
+                codigo = this._codigo,
+                nome = this._nome,
+                saldo = this._saldo,
+                custo = this._custo,
+                medida = this._medida
+            };
+
+            Produto produto = new Produto(obj.codigo, obj.nome, obj.saldo, obj.custo, obj.medida);
+            produto.ToExpectedObject().ShouldMatch(produto);
         }
     }
-
-
-
-
-
-
-
 
     internal class Produto
     {

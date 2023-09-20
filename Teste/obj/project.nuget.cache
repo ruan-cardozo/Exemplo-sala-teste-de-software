@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "yZNuD298sg4ItBWxRfJ/VS9dfihYve8dKHa3l8W2xh1EcntDRk9WUuLLCHK2wM9fdYBFWwbZpE89bZvAftofbQ==",
+  "dgSpecHash": "3YX+2IRG5id7bphtZRSB1SE2cXGxs1hHm1fVIovIoZ6VtDCrawV1hNW0OhJ4dCuacfIFZSVbtM37C/P1CC1ZdA==",
   "success": true,
   "projectFilePath": "/home/ruan/Downloads/Almoxarifado/Teste/Teste.csproj",
   "expectedPackageFiles": [
     "/home/ruan/.nuget/packages/coverlet.collector/3.2.0/coverlet.collector.3.2.0.nupkg.sha512",
+    "/home/ruan/.nuget/packages/expectedobjects/3.5.4/expectedobjects.3.5.4.nupkg.sha512",
     "/home/ruan/.nuget/packages/microsoft.codecoverage/17.5.0/microsoft.codecoverage.17.5.0.nupkg.sha512",
     "/home/ruan/.nuget/packages/microsoft.net.test.sdk/17.5.0/microsoft.net.test.sdk.17.5.0.nupkg.sha512",
     "/home/ruan/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
